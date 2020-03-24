@@ -8,24 +8,18 @@
     <meta name="description" content="" />
     <meta name="author" content="Mackenzie Jorgensen" />
     <link rel="shortcut icon" type="image/svg" href="https://image.flaticon.com/icons/svg/774/774279.svg" />
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/" />
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <meta name="theme-color" content="#563d7c">
-
-
-
+    <script src="https://kit.fontawesome.com/9fa9f65af1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
             <div class="inner">
-                <h3 class="masthead-brand">Mackenzie Jorgensen</h3>
-                <nav class="nav nav-masthead justify-content-center">
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                    <a class="navbar-brand" href="#"><b>Mackenzie Jorgensen</b></a>
                     <a class="nav-link active" href="#">Home</a>
                     <a class="nav-link" href="#">About Me</a>
                     <a class="nav-link" href="#">Current Projects</a>
@@ -35,18 +29,48 @@
             </div>
         </header>
         <main role="main" class="inner cover">
-            <h1 class="cover-heading">Welcome to my website. I am a computer scientist, researcher, coder, teacher, speaker, athlete, and friend. </h1>
+            <h1 class="cover-heading"><b>I AM</b><br/> a computer scientist, researcher, coder, feminist, speaker, athlete, and mentor. </h1>
             <p class="lead">
                 You will find up-to-date and accurate information about my current research and outreach pursuits. Closing the gap
-                of women in computer science is goals.
+                of women in computer science is one of my main goals.
             </p>
         </main>
 
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <p>Ms. Jorgensen's professional website coded by herself <a href="https://github.com/mjorgen1">@mjorgen1</a>.</p>
+        <!--TODO: add a gallery of photos of me doing my thing around the world-->
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50 fixed-bottom">
+            
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1"
+                        href="https://www.researchgate.net/profile/Mackenzie_Jorgensen">
+                           <i class="fab fa-researchgate fa-3x" style="color:#47fff0;"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://github.com/mjorgen1">
+                        <i class="fab fa-github fa-3x" style="color:#030a09"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1"href="https://www.linkedin.com/in/mackenzie-j-447763142/">
+                           <i class="fab fa-linkedin-in fa-3x" style="color:#ffffff"> </i>
+                    </a>
+                </li>
+            </ul>
+            <hr />
+            <!-- Social buttons -->
+            <!-- Copyright -->
+            <div class="cover-container text-center">
+                MGJ's website coded by herself:
+                <a href="https://github.com/mjorgen1/mjorgen1.github.io"> @mjorgen1</a>.
             </div>
+            <!-- Copyright -->
+
         </footer>
+        <!-- Footer -->
     </div>
 </body>
 </html>
