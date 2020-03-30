@@ -20,6 +20,9 @@
 
 </head>
 <body class="text-center">
+
+
+    <!--NAVIGATION BAR-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Mackenzie Jorgensen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsMe" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarsMe">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aboutme.html">About Me</a>
@@ -48,15 +51,45 @@
         </div>
     </nav>
 
+    <!--MASK-->
+    <div id="intro" class="view">
+        <div class="full-bg-img">
+            <style>
+                html, body, header, #intro {
+                    height: 100%;
+                }
+
+                #intro {
+                    background: url('salzburg.jpg') no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            </style>
+        </div>
+    </div>
+
+    <!--MAIN CONTENT STUFF-->
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">I am a <br /> <b><tts></tts></b> </h1>
-        <p class="lead">
-            You will find up-to-date and accurate information about my current research and outreach pursuits. <br /> Empowering
-            <i>women in computer science</i> is one of my main goals.
-        </p>
+        <div class="centered">
+            <h1 class="cover-heading">I am a <br /> <b><tts></tts></b> </h1>
+            <p class="lead">
+                You will find up-to-date and accurate information<br /> about my current research and outreach pursuits.
+            </p>
+            <style>
+                .centered {
+                    color: black;
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </div>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50 fixed-bottom">
 
         <!-- Social buttons -->
@@ -86,7 +119,8 @@
         </div>
 
     </footer>
-    
+
+    <!--SCRIPTS BELOW-->
     <script src="textTimeSlider.js"></script>
     <script>
         $("tts").textTimeSlider(["Computer Scientist", "Researcher", "Coder", "Feminist", "Speaker", "Mentor"], [2000, 2000, 2000, 2000, 2000, 2000]);
